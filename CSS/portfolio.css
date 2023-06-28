@@ -1,0 +1,140 @@
+:root {
+    --maincolor: black;
+    --secondarycolor: white;
+    --montserrat-font: "Montserrat";
+}
+
+#portfolio {
+    padding: 160px 15% 120px;
+    background-color: #292929 !important;
+}
+
+#h1-projects {
+    text-align: center;
+    font-family: var(--montserrat-font);
+    color: var(--secondarycolor);
+    font-size: 2rem;
+}
+
+.portfolio-content {
+    /* estilo da section portfolio */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 8rem;
+}
+
+@media (max-width: 840px) {
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+}
+
+.row {
+    /* estilo da div */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img {
+    /* estilo da img dentro da div */
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    /* estilo da div dos textos */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.05), #000);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+    filter: blur(5rem);
+    text-shadow: 2px 2px 3px #333333;
+}
+
+.layer h5 {
+    /* estilo do h5 da div */
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    /* estilo do p da div */
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.layer i {
+    /* estilo do icone da div */
+    color: #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#link-icon:hover {
+    /* hover icone da section portfolio */
+    color: red;
+    background-color: #fff;
+    transition: all 0.9s ease;
+}
+
+.row:hover img {
+    /* hover da img dentro da row */
+    transform: scale(1.3);
+    filter: blur(5px);
+    transition: all 0.7s ease-in-out;
+}
+
+.row:hover .layer {
+    /* hover da layer dentro da row */
+    filter: initial;
+    transition: all 0.4s ease-in-out;
+}
+
+#portfolio {
+    padding: 160px 15% 120px;
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.main-texto p {
+    margin-bottom: 2rem;
+}
+
+.layer h5 {
+    color: red;
+    font-weight: bold;
+}
+
+.main-texto {
+    color: #fff;
+    text-shadow: 2px 2px 3px #383838;
+}

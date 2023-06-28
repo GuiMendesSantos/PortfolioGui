@@ -1,0 +1,35 @@
+:root {
+    --maincolor: black;
+    --secondarycolor: white;
+    --montserrat-font: "Montserrat";
+}
+
+.home-icons {
+    position: relative;
+    align-items: center;
+    font-size: 3rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    text-shadow: 2px 2px 2px #303030;
+}
+
+#insta:hover {
+    text-decoration: none;
+    transition: all 0.45s ease;
+    color: rgb(255, 32, 32);
+    transform: translateY(5px);
+}
+
+#linkedin:hover {
+    text-decoration: none;
+    transition: all 0.45s ease;
+    color: rgb(255, 32, 32);
+    transform: translateY(5px);
+}
+
+#github:hover {
+    text-decoration: none;
+    transition: all 0.45s ease;
+    color: rgb(255, 32, 32);
+    transform: translateY(5px);
+}

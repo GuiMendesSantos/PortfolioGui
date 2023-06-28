@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --maincolor: black;
+  --secondarycolor: white;
+  --montserrat-font: "Montserrat";
+}
+
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+section {
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,165 @@
+:root {
+    --maincolor: black;
+    --secondarycolor: white;
+    --montserrat-font: "Montserrat";
+}
+
+#logo-header {
+    width: 8rem;
+}
+
+#eu-home {
+    height: 20rem;
+    width: 20rem;
+    margin: 0 50% 25% 50%;
+    border-radius: 1rem;
+}
+
+#menu-hb {
+    font-size: 3rem;
+    color: red;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 50px 1rem 50px;
+    flex-wrap: wrap;
+    font-family: "Montserrat";
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transition: all 0.45s ease-in-out;
+}
+
+.header2 {
+    /* configuracoes quando o usuario clica no menu hamburguer */
+    transition: all 0.45s ease;
+    background-color: #242424;
+    color: red;
+}
+
+.navlist {
+    /* configura os links do header */
+
+}
+
+.navlist a {
+    /* estilo dos links do header */
+    transition: all .45s ease;
+    margin: 1rem;
+}
+
+.navlist a:hover {
+    /* ao passar o mouse por cima dos links do header */
+    color: var(--secondarycolor);
+    transition: all .45s ease-in-out;
+}
+
+.navlist a:active {
+    /* estilo do link ativo */
+    color: var(--secondarycolor);
+}
+
+header.sticky {
+    /* estilo do header quando o usuario desce a pagina e mudar de bg-color */
+    background-color: #222222;
+    box-shadow: 2px 2px 5px #181818;
+    padding: 6px 10%;
+    transition: all 0.45s ease-in-out;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: rgb(255, 32, 32);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.45s ease-in-out;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    text-decoration: none;
+    transition: all 0.45s ease;
+    color: rgb(255, 255, 255);
+}
+
+header #menu-hb i {
+    color: rgb(255, 32, 32);
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 920px) {
+    header #menu-hb i {
+        display: block;
+    }
+
+    header ul {
+        position: fixed;
+        top: 116px;
+        left: 200%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        z-index: 1;
+        transition: all 0.45s ease;
+        background-color: transparent;
+    }
+
+    header ul.open {
+        left: 0;
+        background-color: #2a2a2a;
+    }
+
+    header ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    header ul li a {
+        font-size: 23px;
+    }
+
+    header ul li a.active,
+    header ul li a:hover {
+        background: none;
+        color: var(--secondarycolor);
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        padding: 2rem 25px 0 25px;
+    }
+}
+
+@media (max-width: 840px) {
+    #menu-hb {
+        display: block;
+    }
+}

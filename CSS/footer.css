@@ -1,0 +1,16 @@
+:root {
+    --maincolor: black;
+    --secondarycolor: white;
+    --montserrat-font: "Montserrat";
+}
+
+#footer {
+    color: #fff;
+    padding: 2rem;
+    top: 0;
+    right: 0;
+    background-color: #242424;
+    font-family: "Montserrat";
+    font-size: 0.6rem;
+
+}
