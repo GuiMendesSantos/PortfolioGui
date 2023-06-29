@@ -1,79 +1,80 @@
 :root {
-    --maincolor: black;
-    --secondarycolor: white;
-    --montserrat-font: "Montserrat";
+  --maincolor: black;
+  --secondarycolor: white;
+  --montserrat-font: "Montserrat";
 }
 
 .about {
-    /* estilo section sobre */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    padding: 120px 15% 120px;
-    font-family: "Montserrat";
-    background-color: #f5f5f5;
+  /* estilo section sobre */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 120px 15% 120px;
+  font-family: "Montserrat";
+  background-color: #f5f5f5;
 }
 
 .about-img img {
-    /* estilo da imagem da section sobre */
-    max-width: 530px;
-    height: auto;
-    width: 100%;
+  /* estilo da imagem da section sobre */
+  max-width: 530px;
+  height: auto;
+  width: 100%;
 }
 
 .about-text h2 {
-    /* estilo h2 da section sobre */
-    font-size: 2rem;
-    line-height: 1;
+  /* estilo h2 da section sobre */
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .about-text h4 {
-    /* estilo h4 da section sobre*/
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #000;
-    line-height: 1.7;
-    margin: 15px 0 30px;
+  /* estilo h4 da section sobre*/
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #FF002A;
+  text-shadow: 2px 2px 3px #ffffff;
+  line-height: 1.7;
+  margin: 15px 0 30px;
 }
 
 .about-text p {
-    /* estilo p da section sobre */
-    color: var(--second-color);
-    font-size: var(--p-font);
-    line-height: 1.8;
-    margin-bottom: 3rem;
-    text-align: justify;
+  /* estilo p da section sobre */
+  color: var(--second-color);
+  font-size: var(--p-font);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 #button-about {
-    text-decoration: none;
-    background-color: red;
-    padding: 1rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 0.45s ease-in-out;
-    width: auto;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 3px 3px 5px #ccc;
-    text-shadow: 1px 1px 4px #ccc;
-    border-radius: 1rem;
+  text-decoration: none;
+  background-color: #FF002A;
+  padding: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.45s ease-in-out;
+  width: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px #ccc;
+  text-shadow: 1px 1px 4px #ccc;
+  border-radius: 1rem;
 }
 
 #button-about:hover {
-    transition: all 0.45s ease-in-out;
-    transform: scale(0.95);
+  transition: all 0.45s ease-in-out;
+  transform: scale(0.95);
 }
 
 /* faz a quebra da imagem */
 @media (max-width: 1050px) {
-    .about {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
