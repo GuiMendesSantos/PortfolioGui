@@ -27,3 +27,12 @@ section {
   top: 0;
   right: 0;
 }
+
+::-moz-selection { /* Code for Firefox */
+  background:  #6e757a;
+}
+
+::selection {
+  background: #d6d6d6;
+}
+
