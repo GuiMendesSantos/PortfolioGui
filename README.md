@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-  <img style="border:2px solid black" alt="Main Image" src="..IMAGES/site.png" width="100%">
+  <img style="border:2px solid black" alt="Main Image" src="../IMAGES/site.png" width="100%">
 </p>
 
 ---
