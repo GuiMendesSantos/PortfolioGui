@@ -151,7 +151,11 @@ header #menu-hb i {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 920px) {
+=======
+@media (max-width:920px) {
+>>>>>>> 093a47ed5240eb17ca0a13e5feb845275dfc6c61
   #menu-hb {
     display: block;
   }
