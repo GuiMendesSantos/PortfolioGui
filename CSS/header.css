@@ -151,7 +151,7 @@ header #menu-hb i {
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 920px) {
   #menu-hb {
     display: block;
   }
